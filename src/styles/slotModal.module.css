@@ -1,0 +1,119 @@
+/* styles/slotModal.module.css */
+
+/* Background overlay */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 50;
+}
+
+/* Dialog box */
+.dialog {
+  background: #ffffff;
+  border-radius: 16px; /* Matches Flutter RoundedRectangleBorder(16) */
+  padding: 24px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Title row */
+.titleRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+/* Title text */
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000000;
+}
+
+/* Red accent icon */
+.redIcon {
+  color: #f44336; /* Flutter Colors.redAccent */
+  font-size: 24px;
+}
+
+/* Green accent icon inside white circle */
+.parkingIconCircle {
+  height: 35px;
+  width: 35px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.greenIcon {
+  color: #4caf50; /* Flutter Colors.green */
+  font-size: 20px;
+}
+
+/* Text styles */
+.text {
+  font-size: 14px;
+  color: #616161; /* Flutter Colors.grey[700] */
+}
+.bookedBy {
+  font-size: 16px;
+  font-weight: bold;
+  color: #f44336;
+}
+.textCenter {
+  font-size: 14px;
+  text-align: center;
+  color: #616161;
+  margin-top: 8px;
+}
+
+/* Input field */
+.input {
+  margin-top: 12px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px; /* Matches Flutter OutlineInputBorder radius */
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+/* Buttons */
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 20px;
+}
+.cancelButton {
+  background: transparent;
+  border: none;
+  color: #616161;
+  font-size: 14px;
+  cursor: pointer;
+}
+.freeButton {
+  background: #f44336;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+.bookButton {
+  background: #4caf50;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
